@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-ruby '2.3.3'   # just in case - tell Heroku which Ruby version we need
+ruby '2.4.0'   # just in case - tell Heroku which Ruby version we need
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
