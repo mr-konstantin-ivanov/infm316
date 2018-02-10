@@ -61,6 +61,7 @@ group :test do
   gem 'factory_bot_rails'
 end
 
+gem 'pg'              # use PostgreSQL in production (Heroku)
 
 group :production do
   gem 'pg'              # use PostgreSQL in production (Heroku)
