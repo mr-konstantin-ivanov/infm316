@@ -1,0 +1,23 @@
+%h2 Edit Book
+ 
+= form_tag book_path(@book), :method => :put do
+  - unless @book.errors.empty?
+    #warning
+      Errors prevented this book from being #{controller.action_name}d:
+      %ul
+        - @book.errors.full_messages.each do |error|
+          %li= error
+          
+  = label :book, :title, 'Title'
+  = text_field :book, :title
+
+  = label :description, :title, 'Description'
+  = text_field :book, :description
+ 
+  = label :book, :genre, 'Genre'
+  = select :book, :genre, ['Science Fiction', 'Drama', 'Action and Adventure', 'Romance', 'Mystery', 'Horror']
+ 
+  = label :book, :publish_date, 'Published On'
+  = date_select :book, :publish_date
+  
+  = submit_tag 'Update Book Info'
