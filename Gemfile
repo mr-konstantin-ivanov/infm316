@@ -39,7 +39,7 @@ ruby '2.4.0'   # just in case - tell Heroku which Ruby version we need
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3' # use SQLite only in development and testing
+#  gem 'sqlite3' # use SQLite only in development and testing
 end
 
 group :development do
